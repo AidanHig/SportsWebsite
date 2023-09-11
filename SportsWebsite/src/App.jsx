@@ -4,6 +4,7 @@ import { NBA } from './Components/nba'
 import { NFL } from './Components/nfl'
 import { Topbar } from './Components/topbar'
 import { HomePage } from './Components/HomePage'
+import './components/index.css'
 
 export class App extends Component {
   render() {
