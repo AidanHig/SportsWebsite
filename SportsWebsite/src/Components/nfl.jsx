@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export const NFL = () => {
-  return (
-    <div>NFL page</div>
-  )
+export class NFL extends Component {
+  render() {
+    return (
+      <div>
+        NFL
+      </div>
+    )
+  }
 }
+
+export default NFL

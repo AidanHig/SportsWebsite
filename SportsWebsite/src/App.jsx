@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Routes, Route} from 'react-router-dom'
-import { NBA } from './Components/nba'
-import { NFL } from './Components/nfl'
-import { Topbar } from './Components/topbar'
+import { NBA } from './components/NBA'
+import { NFL } from './components/NFL'
+import { Topbar } from './components/Topbar'
 import { HomePage } from './Components/HomePage'
 import './components/index.css'
 
@@ -13,8 +13,8 @@ export class App extends Component {
       <Topbar />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/NBA' element={<NBA />} /> 
-        <Route path='/NFL' element={<NFL />} /> 
+        <Route path='/NBA' element={<NBA />} />
+        <Route path='/NFL' element={<NFL />} />
       </Routes>
       </div>
     )
