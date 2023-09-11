@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const nfl = () => {
+export const NFL = () => {
   return (
-    <div>nfl page</div>
+    <div>NFL page</div>
   )
 }
