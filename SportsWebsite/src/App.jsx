@@ -3,6 +3,7 @@ import { Routes, Route} from 'react-router-dom'
 import { NBA } from './Components/nba'
 import { NFL } from './Components/nfl'
 import { Topbar } from './Components/topbar'
+import { HomePage } from './Components/HomePage'
 
 export class App extends Component {
   render() {
@@ -10,8 +11,9 @@ export class App extends Component {
       <div>
       <Topbar />
       <Routes>
-        <Route path='/' element={<NBA />}> </Route>
-        <Route path='/NFL' element={<NFL />}> </Route>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/NBA' element={<NBA />} /> 
+        <Route path='/NFL' element={<NFL />} /> 
       </Routes>
       </div>
     )
