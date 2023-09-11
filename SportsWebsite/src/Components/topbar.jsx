@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export const Topbar = () => {
   return (
     <nav>
-        <Link to ='/NBA'>NBA</Link>
-        <Link to ='/NFL'>NFL</Link>
+        <NavLink to ='/NBA'>NBA</NavLink>
+        <NavLink to ='/NFL'>NFL</NavLink>
     </nav>
   )
 }
