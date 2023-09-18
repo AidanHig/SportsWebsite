@@ -7,7 +7,6 @@ export class Topbar extends Component {
       <>
         <nav>
           <NavLink to ='/NBA'>NBA</NavLink>
-          <NavLink to ='/NFL'>NFL</NavLink>
         </nav>
       </>
     )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink, Route, Routes } from 'react-router-dom'
+import { NavLink, Route, Routes, Outlet } from 'react-router-dom'
 import './index.css'
 import Schedule from './Schedule'
 
@@ -15,13 +15,14 @@ export class Side extends Component {
     return (
       <>
         <Routes>
-          <Route path = './schedule' element = {<Schedule sport = {this.props.sport}/>}/>
+          {/* <Route path = 'NBA/schedule' element = {<Schedule sport = {this.props.sport}/>}/> */}
         </Routes>
         <div className = 'sidebar'>
           <NavLink to ='schedule'>{this.props.sport} Schedule</NavLink>
           <NavLink to ='recentgames'>Recent Games</NavLink>
           <NavLink to ='trades'>Trades</NavLink>
         </div>
+        <Outlet/>
       </>
     )
   }
