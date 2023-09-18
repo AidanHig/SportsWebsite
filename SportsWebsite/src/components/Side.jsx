@@ -14,9 +14,6 @@ export class Side extends Component {
   render() {
     return (
       <>
-        <Routes>
-          {/* <Route path = 'NBA/schedule' element = {<Schedule sport = {this.props.sport}/>}/> */}
-        </Routes>
         <div className = 'sidebar'>
           <NavLink to ='schedule'>{this.props.sport} Schedule</NavLink>
           <NavLink to ='recentgames'>Recent Games</NavLink>
