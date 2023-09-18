@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink, Route, Routes, Outlet } from 'react-router-dom'
 import './index.css'
-import Schedule from './Schedule'
 
 export class Side extends Component {
   constructor(props) {
