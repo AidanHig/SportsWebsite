@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import Side from './Side'
+import './index.css'
 
 export class Browser extends Component {
     constructor(props) {
@@ -11,7 +13,13 @@ export class Browser extends Component {
   render() {
     return (
       <>
-        <div>{this.props.sport}</div>
+        <div>
+            <Side sport = {this.props.sport} />
+            {/* <Routes>
+                <Route path = 'schedule' element = {<HomePage />}/>
+            </Routes> */}
+        </div>
+        
       </>
     )
   }

@@ -1,5 +1,6 @@
 nav {
     background-color: white;
+    color: black;
     padding: 16px 32px;
 }
 
@@ -9,4 +10,9 @@ nav a {
 
 nav a.active{
     font-weight: bold;
+}
+
+.sidebar {
+    color: black;
+    display:flex;
 }

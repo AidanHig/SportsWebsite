@@ -9,12 +9,12 @@ export class App extends Component {
   render() {
     return (
       <div>
-      <Topbar />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/NBA' element={<Browser sport = 'NBA' />} />
-        <Route path='/NFL' element={<Browser sport = 'NFL' />} />
-      </Routes>
+        <Topbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/NBA' element={<Browser sport = 'NBA' />} />
+          <Route path='/NFL' element={<Browser sport = 'NFL' />} />
+        </Routes>
       </div>
     )
   }
