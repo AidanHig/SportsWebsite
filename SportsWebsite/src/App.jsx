@@ -5,8 +5,8 @@ import { HomePage } from './Components/HomePage'
 import Browser from './components/Browser'
 import './components/index.css'
 import Schedule from './components/Schedule'
-import RecentGames from './recentGames'
-import Trades from './Trades'
+import RecentGames from './components/RecentGames'
+import Trades from './components/Trades'
 
 export class App extends Component {
   render() {
@@ -15,11 +15,9 @@ export class App extends Component {
         <Topbar />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='NBA' element={<Browser sport = 'NBA' />}>
-              <Route path='schedule' element={<Schedule/>} />
-              <Route path='recentgames' element={<RecentGames/>} />
-              <Route path='trades' element={<Trades/>} />
-          </Route> 
+          <Route path='schedule' element={<Schedule/>} />
+          <Route path='recentgames' element={<RecentGames/>} />
+          <Route path='trades' element={<Trades/>} />
         </Routes>
       </div>
     )
